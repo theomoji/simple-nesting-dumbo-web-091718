@@ -56,8 +56,10 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-		 p programmer_hash[:dennis_ritchie][:languages].replace "'#{v}'"
+		 (programmer_hash[:dennis_ritchie][:languages]).tr('[]')
 end
+
+
 
 def adding_matz
 # add the following information to the top level of programmer_hash
